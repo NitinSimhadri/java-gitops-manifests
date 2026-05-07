@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-devops-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: java-devops-app
+  template:
+    metadata:
+      labels:
+        app: java-devops-app
+    spec:
+      containers:
+      - name: java-devops-app
+        image: nitin52050/java-devops-app:latest
+        ports:
+        - containerPort: 8082
