@@ -13,7 +13,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE      = 'nitin52050/java-devops-app'
-        SONAR_PROJECT_KEY = 'java-devops-app'
+        SONAR_PROJECT_KEY = 'java-gitops-app'
         SONAR_HOST_URL    = 'http://15.135.109.138:9000'
     }
 
